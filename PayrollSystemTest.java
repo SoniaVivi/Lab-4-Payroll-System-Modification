@@ -33,6 +33,14 @@ public class PayrollSystemTest {
                               hourlyEmployee,
                               commissionEmployee,
                               basePlusCommissionEmployee};
+
+      System.out.println();
+      for (Employee current : employees) {
+         System.out.println(current);
+         System.out.printf(
+            "earned $%,.2f\n\n", current.earnings());
+      }
+
       printEmployeeEarnings(employees);
 
    }
